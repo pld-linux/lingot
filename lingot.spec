@@ -1,5 +1,5 @@
 Summary:	LINGOT - LINGOT Is Not a Guitar-Only Tuner
-Summary(pl):	LINGOT - LINGOT to nie tylko tuner gitarowy
+Summary(pl.UTF-8):   LINGOT - LINGOT to nie tylko tuner gitarowy
 Name:		lingot
 Version:	0.6.2
 Release:	1
@@ -17,10 +17,10 @@ LINGOT is a musical instrument tuner. It's accurate, easy to use, and
 highly configurable. Originally conceived to tune electric guitars.
 (Tuning another instruments has not been tested).
 
-%description -l pl
-LINGOT to stroik do instrumentów. Jest dok³adny, ³atwy w u¿yciu, i
+%description -l pl.UTF-8
+LINGOT to stroik do instrumentÃ³w. Jest dokÅ‚adny, Å‚atwy w uÅ¼yciu, i
 wysoce konfigurowalny. Oryginalnie stworzony do strojenia gitar
-elektrycznych. (Strojenie innych instrumentów nie by³o testowane).
+elektrycznych. (Strojenie innych instrumentÃ³w nie byÅ‚o testowane).
 
 %prep
 %setup -q
