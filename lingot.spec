@@ -1,5 +1,5 @@
 Summary:	LINGOT - LINGOT Is Not a Guitar-Only Tuner
-Summary(pl.UTF-8):   LINGOT - LINGOT to nie tylko tuner gitarowy
+Summary(pl.UTF-8):	LINGOT - LINGOT to nie tylko tuner gitarowy
 Name:		lingot
 Version:	0.6.2
 Release:	1
