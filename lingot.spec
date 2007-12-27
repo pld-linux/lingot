@@ -1,13 +1,14 @@
 Summary:	LINGOT - LINGOT Is Not a Guitar-Only Tuner
 Summary(pl.UTF-8):	LINGOT - LINGOT to nie tylko tuner gitarowy
 Name:		lingot
-Version:	0.7.1
+Version:	0.7.6
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://savannah.nongnu.org/download/lingot/%{name}-%{version}.tar.gz
-# Source0-md5:	86632da52ea35b2eca792a4c7ee7bfe5
+# Source0-md5:	e030c45af43e59521f6207ef5c9c5687
 URL:		http://www.nongnu.org/lingot/
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,7 +24,7 @@ wysoce konfigurowalny. Oryginalnie stworzony do strojenia gitar
 elektrycznych. (Strojenie innych instrumentów nie było testowane).
 
 %prep
-%setup -q -n lingot
+%setup -q
 
 %build
 %configure
@@ -35,10 +36,14 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS README README.ES
+%doc AUTHORS README NEWS THANKS TODO
 %attr(755,root,root) %{_bindir}/*
+%{_pixmapsdir}/lingot
+%{_desktopdir}/lingot.desktop
