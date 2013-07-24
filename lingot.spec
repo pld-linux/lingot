@@ -48,6 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS README NEWS THANKS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/lingot
-%{_datadir}/lingot/glade
 %{_pixmapsdir}/lingot
 %{_desktopdir}/lingot.desktop
