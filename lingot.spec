@@ -8,7 +8,7 @@ Group:		X11/Applications/Multimedia
 Source0:	http://savannah.nongnu.org/download/lingot/%{name}-%{version}.tar.gz
 # Source0-md5:	5a61c88e3770270246385ab9dbc39793
 URL:		http://www.nongnu.org/lingot/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel
 BuildRequires:	jack-audio-connection-kit-devel >= 0.102.0
 BuildRequires:	libglade2-devel
